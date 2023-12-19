@@ -1,0 +1,78 @@
+/* Navbar.css */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+  }
+  
+  .menu {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    gap: 70px; /* Add gap between items */
+    font-family: Lato;
+    font-weight: 900;
+    font-size: large;
+  }
+  
+  .visible-items div {
+    cursor: pointer;
+  }
+  
+  .more-items {
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .hidden-items {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #333;
+    color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    flex-direction: column; /* Display items in a column */
+  }
+  
+  .more-items:hover .hidden-items {
+    display: flex;
+  }
+  
+  .hidden-items div {
+    cursor: pointer;
+    margin-bottom: 8px; /* Add margin between items in the "More" section */
+  }
+  
+  .categories {
+    margin-top: 10px;
+  }
+  
+  .search-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Add gap between items */
+  }
+  
+  .search-bar input {
+    padding: 8px;
+    border-bottom:solid;
+    border-width: 1px;
+
+    outline: none;
+  }
+  .search-box{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color:#f6f6f6;
+  }
+  @font-face {
+    font-family: Lato;
+    src:url(../../assets/fonts/Lato-Regular.ttf);
+}
