@@ -2,6 +2,7 @@ import React,{useState} from "react";
 import {carouselData} from './carouselData';
 import {FaArrowAltCircleRight,FaArrowAltCircleLeft} from 'react-icons/fa'
 import './style.css';
+
 const Carousel = ({slides}) =>{
     const [current,setCurrent] =useState(0);
     const length = slides.length;
